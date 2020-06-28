@@ -34,4 +34,5 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('logout','UsuariosController@Logout');
     Route::delete('usuarios/{usuario_id}','UsuariosController@Delete');
     Route::get('usuarios/{id?}','UsuariosController@Get');
+    
 });
