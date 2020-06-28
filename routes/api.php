@@ -16,11 +16,9 @@ use Laravel\Passport\Http\Middleware\CheckClientCredentials;
 */
 
 
-Route::get('usuarios/{id?}','UsuariosController@Get');
 Route::post('usuarios','UsuariosController@Create');
 Route::post('login','UsuariosController@Login');
 Route::get('usuarios/verify/{token}','UsuariosController@VerifyToken');
-Route::delete('usuarios/{usuario_id}','UsuariosController@Delete');
 
 
 
@@ -32,6 +30,8 @@ Route::middleware(['auth:api'])->group(function () {
     Route::delete('dominios/{dominio_id}','DominiosController@RemoveDominio');
     Route::delete('dominios/{dominio_id}/{valor_id}','DominiosController@RemoveValor');
 
-    
+
     Route::get('logout','UsuariosController@Logout');
+    Route::delete('usuarios/{usuario_id}','UsuariosController@Delete');
+    Route::get('usuarios/{id?}','UsuariosController@Get');
 });
