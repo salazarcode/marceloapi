@@ -35,7 +35,6 @@ class DominiosController extends Controller
         $dominio->valores;
         return $dominio;
     }
-    //Comentario que notiene otra funcion que forzar un ommitwefwef wewef
 
 
     public function Add($id, Request $req)
