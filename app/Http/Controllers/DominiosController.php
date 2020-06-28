@@ -35,7 +35,8 @@ class DominiosController extends Controller
         $dominio->valores;
         return $dominio;
     }
-    //Comentario
+    //Comentario que notiene otra funcion que forzar un ommit
+    
 
     public function Add($id, Request $req)
     {                
