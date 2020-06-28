@@ -51,7 +51,7 @@ class DominiosController extends Controller
         $dom->valores;
         
         return $dom;
-    }    //sin malas palabras
+    }    //sin malas palabrasewfqwefqewew
 
     public function RemoveDominio($valor_id)
     {        
