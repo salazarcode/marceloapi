@@ -52,6 +52,8 @@ class DominiosController extends Controller
         
         return $dom;
     }    
+    //Me cago en maduro, chavez y sucedaneos
+    
 
     public function RemoveDominio($valor_id)
     {        
