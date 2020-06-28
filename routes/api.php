@@ -30,9 +30,10 @@ Route::middleware(['auth:api'])->group(function () {
     Route::delete('dominios/{dominio_id}','DominiosController@RemoveDominio');
     Route::delete('dominios/{dominio_id}/{valor_id}','DominiosController@RemoveValor');
 
+    //Comentario
 
     Route::get('logout','UsuariosController@Logout');
     Route::delete('usuarios/{usuario_id}','UsuariosController@Delete');
     Route::get('usuarios/{id?}','UsuariosController@Get');
-    
+
 });

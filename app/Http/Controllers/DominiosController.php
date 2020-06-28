@@ -35,7 +35,7 @@ class DominiosController extends Controller
         $dominio->valores;
         return $dominio;
     }
-    
+    //Comentario
 
     public function Add($id, Request $req)
     {                
